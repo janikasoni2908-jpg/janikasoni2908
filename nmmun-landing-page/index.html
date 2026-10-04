@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NMMUN 2026 | SVKM's NMIMS Shirpur Campus | 15th Legacy Edition</title>
+  <meta name="description" content="Official Landing Page for NMMUN 2026 at SVKM's NMIMS Shirpur Campus. A premier 3-day residential Model United Nations conference featuring 7 dynamic committees, 500+ delegates, and all-inclusive campus hospitality.">
+  <meta name="keywords" content="NMMUN 2026, NMIMS Shirpur MUN, Model United Nations Shirpur, MPSTME Shirpur, MUN Maharashtra, UNSC, AIPPM, Residential MUN">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#050b14',
+              surface: '#0b1526',
+              card: 'rgba(15, 27, 48, 0.75)',
+              gold: '#d4af37',
+              goldLight: '#f5d77f',
+              blueAccent: '#1d70b8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#050b14] text-slate-100 antialiased selection:bg-amber-400 selection:text-slate-950 relative min-h-screen">
+
+  <!-- Ambient Light Orbs -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="ambient-glow-3"></div>
+
+  <!-- Background Subtle Grid -->
+  <div class="fixed inset-0 bg-grid-pattern pointer-events-none z-0"></div>
+
+  <!-- ==================== TOP ANNOUNCEMENT BAR ==================== -->
+  <div class="relative z-50 bg-gradient-to-r from-amber-600/25 via-amber-400/20 to-blue-600/25 border-b border-amber-500/20 py-2 px-4 text-center text-xs font-medium text-amber-200">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-2">
+      <span class="pulse-indicator"></span>
+      <span><strong>NMMUN 2026 (Shirpur Campus):</strong> All-Inclusive Residential Passes & Airport Shuttles from Indore (IDR) & Bhusawal are now open!</span>
+      <a href="#packages" class="underline decoration-amber-400 font-bold hover:text-white ml-1">View Delegate Packages &rarr;</a>
+    </div>
+  </div>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="sticky top-0 z-40 backdrop-blur-xl bg-[#050b14]/90 border-b border-slate-800/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo Branding -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-400/20 to-blue-900/40 border border-amber-500/40 flex items-center justify-center shadow-lg shadow-amber-500/10 group-hover:border-amber-400 transition-all">
+          <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0v20m-7-5a10.05 10.05 0 010-10m14 0a10.05 10.05 0 010 10M5 12h14"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-1.5">
+            <span class="text-xl font-extrabold tracking-wider font-cinzel text-slate-100 group-hover:text-amber-400 transition-colors">NMMUN</span>
+            <span class="text-xs font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">2026</span>
+          </div>
+          <p class="text-[10px] tracking-wider uppercase text-amber-400/90 font-medium">NMIMS Shirpur Campus</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center space-x-6 text-xs font-semibold tracking-wide uppercase">
+        <a href="#about" class="text-slate-300 hover:text-amber-300 transition-colors">About</a>
+        <a href="#retreat" class="text-slate-300 hover:text-amber-300 transition-colors">Campus Retreat</a>
+        <a href="#committees" class="text-slate-300 hover:text-amber-300 transition-colors">Committees</a>
+        <a href="#itinerary" class="text-slate-300 hover:text-amber-300 transition-colors">Itinerary</a>
+        <a href="#matrix" class="text-slate-300 hover:text-amber-300 transition-colors">Country Matrix</a>
+        <a href="#transit" class="text-slate-300 hover:text-amber-300 transition-colors">How to Reach</a>
+        <a href="#packages" class="text-slate-300 hover:text-amber-300 transition-colors">Packages</a>
+        <a href="#faq" class="text-slate-300 hover:text-amber-300 transition-colors">FAQ</a>
+      </nav>
+
+      <!-- Right Action CTAs -->
+      <div class="hidden sm:flex items-center gap-3">
+        <button onclick="triggerToast('NMMUN Shirpur 2026 Official Brochure downloading...')" class="btn-outline-gold text-xs px-3.5 py-2 rounded-lg font-semibold flex items-center gap-1.5 cursor-pointer">
+          <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+          Brochure
+        </button>
+        <button onclick="openRegisterModal()" class="btn-gold-shimmer text-xs px-5 py-2.5 rounded-lg font-bold flex items-center gap-2 cursor-pointer shadow-md">
+          <span>Register Now</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button onclick="toggleMobileMenu()" class="lg:hidden text-slate-300 hover:text-white p-2 rounded-lg bg-slate-900 border border-slate-800">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-800/90 bg-[#070e1c] px-6 py-5 space-y-3.5">
+      <a href="#about" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-slate-200 hover:text-amber-400">About Conference</a>
+      <a href="#retreat" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-slate-200 hover:text-amber-400">The Shirpur Campus Experience</a>
+      <a href="#committees" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-slate-200 hover:text-amber-400">Committees & Agendas</a>
+      <a href="#itinerary" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-slate-200 hover:text-amber-400">3-Day Itinerary</a>
+      <a href="#matrix" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-slate-200 hover:text-amber-400">Country Matrix</a>
+      <a href="#transit" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-slate-200 hover:text-amber-400">Travel & Logistics Concierge</a>
+      <a href="#packages" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-slate-200 hover:text-amber-400">Residential Packages</a>
+      <a href="#faq" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-slate-200 hover:text-amber-400">Delegate FAQ</a>
+      <div class="pt-4 border-t border-slate-800 flex flex-col gap-3">
+        <button onclick="toggleMobileMenu(); openRegisterModal()" class="btn-gold-shimmer w-full text-center py-2.5 rounded-lg text-xs font-bold">
+          Register as Delegate
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 1. HERO SECTION ==================== -->
+  <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden z-10">
+    <!-- Interactive Multilateral Constellation Canvas -->
+    <canvas id="diplomatic-canvas"></canvas>
+
+    <!-- Floating Diplomatic Badges (Visible on md and up) -->
+    <div class="hidden lg:block absolute top-28 left-8 z-20 float-left-badge pointer-events-none">
+      <div class="px-4 py-2.5 rounded-2xl bg-slate-900/90 border border-amber-500/30 backdrop-blur-md shadow-2xl flex items-center gap-3">
+        <div class="w-8 h-8 rounded-xl bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-300">
+          <i data-lucide="globe-2" class="w-4 h-4"></i>
+        </div>
+        <div class="text-left">
+          <div class="text-[11px] font-bold text-slate-100">7 Sovereign Chambers</div>
+          <div class="text-[9px] uppercase tracking-wider text-amber-400 font-semibold">High-Intensity Simulations</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden lg:block absolute top-40 right-8 z-20 float-right-badge pointer-events-none">
+      <div class="px-4 py-2.5 rounded-2xl bg-slate-900/90 border border-blue-500/30 backdrop-blur-md shadow-2xl flex items-center gap-3">
+        <div class="w-8 h-8 rounded-xl bg-blue-500/20 border border-blue-400/40 flex items-center justify-center text-blue-300">
+          <i data-lucide="shield-check" class="w-4 h-4"></i>
+        </div>
+        <div class="text-left">
+          <div class="text-[11px] font-bold text-slate-100">400-Acre Enclave</div>
+          <div class="text-[9px] uppercase tracking-wider text-emerald-400 font-semibold">Residential Retreat</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
+
+      <!-- Edition & Location Pill -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-amber-500/30 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-6 shadow-inner animate-float-slow">
+        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+        <span>The 15th Legacy Edition • SVKM's NMIMS Shirpur (Est. 2009)</span>
+      </div>
+
+      <!-- Main Headline with Shimmer Light Sweep -->
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight font-cinzel leading-tight mb-4 text-slate-100">
+        NMMUN <span class="hero-title-shimmer font-black">2026</span>
+      </h1>
+
+      <!-- Dynamic Typewriter Animated Theme Subtitle -->
+      <div class="min-h-[44px] flex items-center justify-center mb-4">
+        <h2 class="text-lg sm:text-2xl lg:text-3xl font-medium tracking-wide text-slate-200 max-w-4xl mx-auto">
+          <span class="italic font-serif text-amber-300">“<span id="typewriter-text">Forging Diplomacy in an Age of Disruption</span>”</span><span class="typewriter-cursor"></span>
+        </h2>
+      </div>
+
+      <!-- Unique Campus Positioning Tagline -->
+      <p class="text-sm sm:text-base text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8">
+        A premier 3-day residential diplomatic retreat hosted at the award-winning <strong>400-Acre Mukesh Patel Technology Park, Shirpur</strong>. Where 500+ aspiring diplomats unite away from city bustle to caucus, resolve high-stakes crises, and experience unmatched collegiate hospitality.
+      </p>
+
+      <!-- Event Metadata Badges -->
+      <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs font-medium text-slate-300 mb-10">
+        <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900/80 border border-slate-800">
+          <i data-lucide="calendar" class="w-4 h-4 text-amber-400"></i>
+          <span>November 13 – 15, 2026</span>
+        </div>
+        <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900/80 border border-slate-800">
+          <i data-lucide="map-pin" class="w-4 h-4 text-amber-400"></i>
+          <span>Mukesh Patel Technology Park, NMIMS Shirpur, Maharashtra</span>
+        </div>
+        <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900/80 border border-slate-800">
+          <i data-lucide="home" class="w-4 h-4 text-emerald-400"></i>
+          <span class="text-emerald-300 font-semibold">100% Residential Campus Experience</span>
+        </div>
+        <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900/80 border border-slate-800">
+          <i data-lucide="award" class="w-4 h-4 text-amber-400"></i>
+          <span class="text-amber-300 font-bold">₹1,50,000 Cash Pool & Trophies</span>
+        </div>
+      </div>
+
+      <!-- Real-Time Countdown Box -->
+      <div class="max-w-xl mx-auto mb-12">
+        <div class="text-[11px] uppercase tracking-widest text-amber-400/90 font-bold mb-3 flex items-center justify-center gap-2">
+          <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+          <span>Plenary Convenes At Shirpur In</span>
+        </div>
+        <div class="grid grid-cols-4 gap-2 sm:gap-4">
+          <div class="countdown-box rounded-xl p-3 sm:p-4 text-center">
+            <span id="days" class="block text-2xl sm:text-4xl font-extrabold text-amber-300 font-cinzel">00</span>
+            <span class="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 font-semibold">Days</span>
+          </div>
+          <div class="countdown-box rounded-xl p-3 sm:p-4 text-center">
+            <span id="hours" class="block text-2xl sm:text-4xl font-extrabold text-amber-300 font-cinzel">00</span>
+            <span class="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 font-semibold">Hours</span>
+          </div>
+          <div class="countdown-box rounded-xl p-3 sm:p-4 text-center">
+            <span id="minutes" class="block text-2xl sm:text-4xl font-extrabold text-amber-300 font-cinzel">00</span>
+            <span class="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 font-semibold">Minutes</span>
+          </div>
+          <div class="countdown-box rounded-xl p-3 sm:p-4 text-center">
+            <span id="seconds" class="block text-2xl sm:text-4xl font-extrabold text-amber-300 font-cinzel">00</span>
+            <span class="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 font-semibold">Seconds</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dual Call to Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+        <button onclick="openRegisterModal()" class="btn-gold-shimmer w-full sm:w-auto px-8 py-3.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2 cursor-pointer shadow-lg">
+          <i data-lucide="user-check" class="w-4 h-4"></i>
+          <span>Register for Residential Pass</span>
+        </button>
+        <a href="#committees" class="btn-outline-gold w-full sm:w-auto px-7 py-3.5 rounded-xl font-semibold text-sm flex items-center justify-center gap-2 cursor-pointer">
+          <i data-lucide="layers" class="w-4 h-4 text-amber-400"></i>
+          <span>Explore 7 Committees</span>
+        </a>
+      </div>
+
+      <!-- Metrics Strip -->
+      <div class="mt-16 pt-10 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-slate-100 font-cinzel">500+</div>
+          <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-1">Delegates Nationwide</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 font-cinzel">7</div>
+          <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-1">Specialized Council Chambers</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-cinzel">400 Acres</div>
+          <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-1">Lush Residential Enclave</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-blue-400 font-cinzel">15+ Years</div>
+          <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-1">Shirpur Diplomatic Legacy</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 2. ABOUT / OVERVIEW SECTION ==================== -->
+  <section id="about" class="py-20 relative z-10 border-t border-slate-800/60 bg-[#070e1b]/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Conference Legacy & Heritage</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-cinzel text-slate-100 mt-2 mb-4">
+          A Diplomatic Retreat in Maharashtra's Educational Oasis
+        </h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mb-6"></div>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          Established in 2009, <strong>Narsee Monjee Model United Nations (NMMUN Shirpur)</strong> is the signature diplomatic conference organized by SVKM's NMIMS Shirpur Campus. Unlike metropolitan single-day conferences, NMMUN Shirpur offers a secluded, high-immersion diplomatic sanctuary where delegates live, dine, caucus, and negotiate around the clock in an extraordinary collegiate township.
+        </p>
+      </div>
+
+      <!-- Core 3 Pillars Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div class="glass-panel rounded-2xl p-7 relative overflow-hidden group">
+          <div class="w-12 h-12 rounded-xl bg-amber-400/10 border border-amber-400/30 flex items-center justify-center text-amber-400 mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="scale" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold font-cinzel text-slate-100 mb-2 group-hover:text-amber-300 transition-colors">
+            Substantive Rigour & Adjudication
+          </h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Led by nationally acclaimed Executive Boards from premier law and international relations circuits. Background guides, rules of procedure, and clause-by-clause scrutiny reflect the highest standards of the UN General Assembly and international tribunals.
+          </p>
+        </div>
+
+        <div class="glass-panel rounded-2xl p-7 relative overflow-hidden group">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="moon" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold font-cinzel text-slate-100 mb-2 group-hover:text-amber-300 transition-colors">
+            24/7 Diplomatic Immersion
+          </h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Because all delegates reside together in the on-campus suites, lobbying doesn't halt when committee adjourns. Alliances are solidified over late-night coffee in hostel courtyards, working papers are refined under the stars, and midnight crisis updates ignite real-time war cabinets.
+          </p>
+        </div>
+
+        <div class="glass-panel rounded-2xl p-7 relative overflow-hidden group">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold font-cinzel text-slate-100 mb-2 group-hover:text-amber-300 transition-colors">
+            All-Inclusive Campus Hospitality
+          </h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Deluxe hostel accommodation, 4-meal daily multi-cuisine dining, airport shuttle convoys from Indore (IDR) & Bhusawal, and round-the-clock medical & security coverage create a seamless, safe, and stress-free retreat for outstation delegates.
+          </p>
+        </div>
+      </div>
+
+      <!-- Secretary-General's Welcome Card -->
+      <div class="glass-card-gold rounded-2xl p-8 sm:p-10 border border-amber-500/30 relative overflow-hidden">
+        <div class="relative z-10 flex flex-col md:flex-row items-center gap-8">
+          <div class="flex-shrink-0 text-center">
+            <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-gradient-to-tr from-amber-500/30 via-slate-800 to-blue-900/40 border-2 border-amber-400/50 p-1 flex items-center justify-center shadow-xl">
+              <i data-lucide="landmark" class="w-12 h-12 text-amber-300"></i>
+            </div>
+            <div class="mt-3">
+              <span class="text-xs font-bold text-amber-300 block">The Secretariat</span>
+              <span class="text-[10px] uppercase tracking-wider text-slate-400">NMMUN Shirpur 2026</span>
+            </div>
+          </div>
+
+          <div class="space-y-3 text-center md:text-left">
+            <div class="inline-flex items-center gap-2 text-amber-400 text-xs font-semibold tracking-wider uppercase">
+              <i data-lucide="quote" class="w-4 h-4"></i>
+              <span>Address from the Secretary-General</span>
+            </div>
+            <blockquote class="text-sm sm:text-base text-slate-200 italic font-serif leading-relaxed">
+              "Welcome to SVKM's NMIMS Shirpur. For fifteen editions, NMMUN Shirpur has served as an intellectual crucible where students transcend textbook theory to experience the raw complexity of global governance. Here in our serene 400-acre campus, delegates form bonds that outlast any single resolution. We eagerly await your arrival at our gates this November for an unforgettable weekend of diplomacy and fellowship."
+            </blockquote>
+            <p class="text-xs text-slate-400">
+              The Secretariat of Narsee Monjee Model United Nations • Mukesh Patel Technology Park, Shirpur
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 3. UNIQUE FEATURE: THE SHIRPUR CAMPUS EXPERIENCE ==================== -->
+  <section id="retreat" class="py-20 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">The Residential Advantage</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-cinzel text-slate-100 mt-2 mb-3">
+          Inside the 400-Acre Shirpur Enclave
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+          Experience collegiate diplomacy like nowhere else in India. Modern infrastructure embedded inside lush greenery, designed for uninterrupted focus and premier delegate comfort.
+        </p>
+      </div>
+
+      <!-- Campus Features Deck -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Feature 1: Modern Council Chambers -->
+        <div class="campus-feature-card p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-400/10 border border-amber-400/30 flex items-center justify-center text-amber-400 mb-4">
+              <i data-lucide="mic" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-100 font-cinzel mb-2">Acoustic Council Chambers</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              Air-conditioned amphitheater-style halls, multimedia projection consoles, and dedicated press corners simulating authentic UN headquarters rooms.
+            </p>
+          </div>
+          <span class="text-[10px] font-bold uppercase tracking-wider text-amber-400/80">Mukesh Patel Academic Complex</span>
+        </div>
+
+        <!-- Feature 2: Deluxe Student Hostels -->
+        <div class="campus-feature-card p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-400/10 border border-emerald-400/30 flex items-center justify-center text-emerald-400 mb-4">
+              <i data-lucide="bed" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-100 font-cinzel mb-2">On-Campus Delegate Suites</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              Well-appointed residential rooms with high-speed Wi-Fi 6, study workstations, 24/7 hot water, biometric security, and dedicated faculty advisor wings.
+            </p>
+          </div>
+          <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-400/80">Separate Boys & Girls Hostels</span>
+        </div>
+
+        <!-- Feature 3: Curated Dining & Gala -->
+        <div class="campus-feature-card p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-400/10 border border-blue-400/30 flex items-center justify-center text-blue-400 mb-4">
+              <i data-lucide="utensils" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-100 font-cinzel mb-2">Diplomatic Multi-Cuisine Dining</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              Four wholesome daily meals: power breakfasts, delegate lunch buffets, evening high tea, and the Grand Diplomatic Banquet Dinner under the stars.
+            </p>
+          </div>
+          <span class="text-[10px] font-bold uppercase tracking-wider text-blue-400/80">Pure Veg & Jain Options Available</span>
+        </div>
+
+        <!-- Feature 4: Open-Air Amphitheater & Sports -->
+        <div class="campus-feature-card p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-purple-400/10 border border-purple-400/30 flex items-center justify-center text-purple-400 mb-4">
+              <i data-lucide="compass" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-100 font-cinzel mb-2">Amphitheater & Recreation</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              Magnificent open-air amphitheater for opening plenary, Olympic swimming pool, gym, and floodlit sports courts for delegate de-stress caucuses.
+            </p>
+          </div>
+          <span class="text-[10px] font-bold uppercase tracking-wider text-purple-400/80">Social Night & Bonfire Zone</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 4. COMMITTEES SECTION ==================== -->
+  <section id="committees" class="py-20 relative z-10 border-t border-slate-800/80 bg-[#060c18]/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Agendas & Chambers</span>
+          <h2 class="text-3xl sm:text-4xl font-bold font-cinzel text-slate-100 mt-2">
+            Committees of NMMUN Shirpur 2026
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-400 mt-2 max-w-xl">
+            Each committee is assigned a dedicated acoustic council chamber within the NMIMS Shirpur academic complex.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap items-center gap-2 bg-slate-900/90 p-1.5 rounded-xl border border-slate-800 text-xs font-medium">
+          <button onclick="renderCommittees('all')" class="px-3.5 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 focus:bg-amber-400 focus:text-slate-950 transition-all font-semibold">
+            All (7)
+          </button>
+          <button onclick="renderCommittees('un')" class="px-3.5 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 focus:bg-amber-400 focus:text-slate-950 transition-all font-semibold">
+            UN Organs
+          </button>
+          <button onclick="renderCommittees('crisis')" class="px-3.5 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 focus:bg-amber-400 focus:text-slate-950 transition-all font-semibold">
+            Crisis & Historical
+          </button>
+          <button onclick="renderCommittees('national')" class="px-3.5 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 focus:bg-amber-400 focus:text-slate-950 transition-all font-semibold">
+            Indian Assemblies
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Committees Grid (Injected by app.js) -->
+      <div id="committees-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered by JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 5. ITINERARY SECTION ==================== -->
+  <section id="itinerary" class="py-20 relative z-10 border-t border-slate-800/80 bg-[#070e1c]/80">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Order of Procedure</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-cinzel text-slate-100 mt-2 mb-3">
+          3-Day Residential Itinerary
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400">
+          From transit arrivals and open-air amphiteater ceremonies to midnight crisis summits and the grand awards gala.
+        </p>
+
+        <!-- Day Selector Tabs -->
+        <div class="flex items-center justify-center gap-3 mt-8">
+          <button id="itinerary-tab-1" onclick="switchItineraryDay(1)" class="px-5 py-2.5 rounded-xl font-bold text-sm bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 shadow-lg shadow-amber-500/20 cursor-pointer">
+            Day 1 (Nov 13)
+          </button>
+          <button id="itinerary-tab-2" onclick="switchItineraryDay(2)" class="px-5 py-2.5 rounded-xl font-semibold text-sm text-slate-400 hover:text-amber-300 hover:bg-slate-800/60 transition-all cursor-pointer">
+            Day 2 (Nov 14)
+          </button>
+          <button id="itinerary-tab-3" onclick="switchItineraryDay(3)" class="px-5 py-2.5 rounded-xl font-semibold text-sm text-slate-400 hover:text-amber-300 hover:bg-slate-800/60 transition-all cursor-pointer">
+            Day 3 (Nov 15)
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Day Header (Dress code & title) -->
+      <div id="itinerary-header">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Timeline Container -->
+      <div class="relative mt-8">
+        <div class="timeline-stem"></div>
+        <div id="itinerary-timeline" class="space-y-6">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 6. TRAVEL & LOGISTICS CONCIERGE ==================== -->
+  <section id="transit" class="py-20 relative z-10 border-t border-slate-800/80 bg-[#050b15]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Logistics & Connectivity</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-cinzel text-slate-100 mt-2 mb-3">
+          Travel & Logistics Concierge
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+          Reaching NMIMS Shirpur is smooth and hassle-free. Our Secretariat operates dedicated delegate shuttle convoys from major regional air and rail junctions.
+        </p>
+
+        <!-- Transit Mode Switcher Tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-3 mt-8">
+          <button id="transit-btn-flight" onclick="switchTransit('flight')" class="px-4 py-2 rounded-xl text-xs font-bold bg-amber-400 text-slate-950 shadow-md cursor-pointer transition-all">
+            ✈️ Via Flight (Indore Airport - IDR)
+          </button>
+          <button id="transit-btn-train" onclick="switchTransit('train')" class="px-4 py-2 rounded-xl text-xs font-semibold text-slate-400 hover:text-white hover:bg-slate-800 cursor-pointer transition-all">
+            🚆 Via Train (Bhusawal / Dhule)
+          </button>
+          <button id="transit-btn-road" onclick="switchTransit('road')" class="px-4 py-2 rounded-xl text-xs font-semibold text-slate-400 hover:text-white hover:bg-slate-800 cursor-pointer transition-all">
+            🚌 Via Road (Mumbai-Agra NH-52)
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Transit Detail Box -->
+      <div id="transit-details" class="max-w-4xl mx-auto mb-12">
+        <!-- Injected by app.js -->
+      </div>
+
+      <!-- Quick Logistics Highlights -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto text-xs text-slate-300">
+        <div class="glass-panel p-5 rounded-xl border border-slate-800 flex items-start gap-3">
+          <div class="transit-step-num flex-shrink-0">1</div>
+          <div>
+            <h4 class="font-bold text-slate-100 mb-1">Pre-Booked Campus Shuttles</h4>
+            <p class="text-slate-400">Indicate your flight/train timing in the registration form to guarantee your seat in the scheduled delegate AC coach.</p>
+          </div>
+        </div>
+
+        <div class="glass-panel p-5 rounded-xl border border-slate-800 flex items-start gap-3">
+          <div class="transit-step-num flex-shrink-0">2</div>
+          <div>
+            <h4 class="font-bold text-slate-100 mb-1">Station & Airport Reception Desks</h4>
+            <p class="text-slate-400">NMMUN student volunteer desks will be stationed at Indore Airport Terminal and Bhusawal Platform 1 holding welcome placards.</p>
+          </div>
+        </div>
+
+        <div class="glass-panel p-5 rounded-xl border border-slate-800 flex items-start gap-3">
+          <div class="transit-step-num flex-shrink-0">3</div>
+          <div>
+            <h4 class="font-bold text-slate-100 mb-1">24x7 Transit Helpline</h4>
+            <p class="text-slate-400">Direct helpline (+91 98201 44521) active from Nov 12 to Nov 16 to coordinate real-time coach departures and arrivals.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 7. DELEGATE PACKAGES & PRICING ==================== -->
+  <section id="packages" class="py-20 relative z-10 border-t border-slate-800/80 bg-[#070e1c]/90">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Registration Passes</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-cinzel text-slate-100 mt-2 mb-3">
+          Delegate Packages & Inclusions
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400">
+          Transparent all-inclusive rates for residential and day delegates. Early-bird pricing valid until October 25, 2026.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-5xl mx-auto">
+        
+        <!-- Package 1: Day Delegate -->
+        <div class="glass-panel rounded-2xl p-7 flex flex-col justify-between border border-slate-800">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Local & Day Pass</span>
+            <h3 class="text-xl font-bold text-slate-100 font-cinzel mb-1">Non-Residential Pass</h3>
+            <p class="text-xs text-slate-400 mb-6">Ideal for local delegates and students staying independently in Shirpur.</p>
+            
+            <div class="mb-6 pb-6 border-b border-slate-800">
+              <span class="text-3xl font-extrabold text-slate-100 font-cinzel">₹1,999</span>
+              <span class="text-xs text-slate-400 ml-1">/ delegate</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-slate-300 mb-8">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 flex-shrink-0"></i>
+                <span>Access to all 3 Days of Committee Sessions</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 flex-shrink-0"></i>
+                <span>Executive Delegate Stationery Kit & Placard</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 flex-shrink-0"></i>
+                <span>3-Day Conference Lunches & High Tea</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 flex-shrink-0"></i>
+                <span>Secretariat Social Night & Cultural Evening Pass</span>
+              </li>
+              <li class="flex items-center gap-2 text-slate-500">
+                <i data-lucide="x-circle" class="w-4 h-4 text-slate-600 flex-shrink-0"></i>
+                <span>Hostel Accommodation Not Included</span>
+              </li>
+            </ul>
+          </div>
+
+          <button onclick="openRegisterModal('', '', 'Non-Residential')" class="btn-outline-gold w-full py-3 rounded-xl text-xs font-bold cursor-pointer">
+            Select Day Pass
+          </button>
+        </div>
+
+        <!-- Package 2: Residential All-Inclusive (Featured) -->
+        <div class="package-card-featured rounded-2xl p-7 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-300 block mb-2">Complete Retreat</span>
+            <h3 class="text-2xl font-bold text-slate-100 font-cinzel mb-1">Residential All-Inclusive Pass</h3>
+            <p class="text-xs text-slate-300 mb-6">The quintessential NMMUN Shirpur experience for outstation delegates.</p>
+            
+            <div class="mb-6 pb-6 border-b border-amber-500/30">
+              <span class="text-4xl font-extrabold text-amber-300 font-cinzel">₹3,499</span>
+              <span class="text-xs text-slate-300 ml-1">/ delegate</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-slate-200 mb-8">
+              <li class="flex items-center gap-2 font-medium">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 flex-shrink-0"></i>
+                <span><strong>3 Days / 2 Nights On-Campus Hostel Stay</strong></span>
+              </li>
+              <li class="flex items-center gap-2 font-medium">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 flex-shrink-0"></i>
+                <span><strong>All 4 Meals Daily</strong> (Breakfast, Lunch, High Tea, Banquet)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 flex-shrink-0"></i>
+                <span>Complimentary Airport/Station Shuttles (Indore & Bhusawal)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 flex-shrink-0"></i>
+                <span>Premium Delegate Kit, Leather Folder & Official Certificate</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 flex-shrink-0"></i>
+                <span>VIP Access to Starlight Gala Banquet & Midnight Crisis</span>
+              </li>
+            </ul>
+          </div>
+
+          <button onclick="openRegisterModal('', '', 'Residential')" class="btn-gold-shimmer w-full py-3.5 rounded-xl text-xs font-extrabold cursor-pointer shadow-xl">
+            Book Residential Pass
+          </button>
+        </div>
+
+        <!-- Package 3: Double Delegation Residential -->
+        <div class="glass-panel rounded-2xl p-7 flex flex-col justify-between border border-slate-800">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Pair Pass (UNSC / DISEC)</span>
+            <h3 class="text-xl font-bold text-slate-100 font-cinzel mb-1">Double Delegation Pass</h3>
+            <p class="text-xs text-slate-400 mb-6">Full all-inclusive residential retreat package for two partnering delegates.</p>
+            
+            <div class="mb-6 pb-6 border-b border-slate-800">
+              <span class="text-3xl font-extrabold text-slate-100 font-cinzel">₹6,499</span>
+              <span class="text-xs text-slate-400 ml-1">/ delegation (2 delegates)</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-slate-300 mb-8">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 flex-shrink-0"></i>
+                <span>Full Residential Stay for 2 Delegates</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 flex-shrink-0"></i>
+                <span>All Meals & Gala Passes for Both Delegates</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 flex-shrink-0"></i>
+                <span>Double Delegate Seat in UNSC or DISEC</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 flex-shrink-0"></i>
+                <span>Airport & Railway Station Pickup for Both</span>
+              </li>
+            </ul>
+          </div>
+
+          <button onclick="openRegisterModal('', '', 'Double Delegation')" class="btn-outline-gold w-full py-3 rounded-xl text-xs font-bold cursor-pointer">
+            Select Double Pass
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 8. LIVE COUNTRY MATRIX SEARCH ==================== -->
+  <section id="matrix" class="py-20 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="glass-panel rounded-3xl p-6 sm:p-10 border border-amber-500/30">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-2">
+              <i data-lucide="search" class="w-3.5 h-3.5"></i>
+              Live Allotment Teaser
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold font-cinzel text-slate-100">
+              Shirpur Country Matrix Search
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-400 mt-1">
+              Search your desired country, cabinet portfolio, or press agency to check allotment status before registering.
+            </p>
+          </div>
+
+          <div id="matrix-count" class="text-xs font-bold text-amber-400 bg-slate-900 px-3.5 py-2 rounded-xl border border-slate-800 self-start md:self-auto">
+            Loading portfolios...
+          </div>
+        </div>
+
+        <div class="relative mb-6">
+          <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+            <i data-lucide="search" class="w-4 h-4"></i>
+          </div>
+          <input 
+            type="text" 
+            id="matrix-search-input"
+            oninput="searchMatrix(this.value)"
+            placeholder="Search by country (e.g. 'United States', 'India', 'France') or committee ('UNSC', 'AIPPM')..."
+            class="w-full pl-11 pr-4 py-3.5 bg-slate-900/90 border border-slate-800 rounded-xl text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-400/70 focus:ring-1 focus:ring-amber-400/50 transition-all"
+          >
+        </div>
+
+        <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-900/50">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="border-b border-slate-800 bg-slate-900/80 text-[11px] uppercase tracking-wider font-bold text-slate-400">
+                <th class="py-3 px-4">Country / Portfolio</th>
+                <th class="py-3 px-4">Committee</th>
+                <th class="py-3 px-4">Delegation Role</th>
+                <th class="py-3 px-4">Allotment Status</th>
+                <th class="py-3 px-4 text-right">Action</th>
+              </tr>
+            </thead>
+            <tbody id="matrix-table-body" class="divide-y divide-slate-800/60">
+              <!-- Rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-4 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-2">
+          <span>* Portfolios are allocated on a rolling first-come basis following registration review.</span>
+          <button onclick="openRegisterModal()" class="text-amber-400 font-bold hover:underline cursor-pointer">
+            Can't find your portfolio? Request custom allotment &rarr;
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 9. DELEGATE FAQ ACCORDION ==================== -->
+  <section id="faq" class="py-20 relative z-10 border-t border-slate-800/70 bg-[#060c18]/60">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Assistance & Guidelines</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-cinzel text-slate-100 mt-2 mb-3">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400">
+          Everything delegates and faculty advisors need to know about visiting NMIMS Shirpur for NMMUN 2026.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <div class="glass-panel rounded-xl border border-slate-800 overflow-hidden">
+          <button onclick="toggleFaq(1)" class="w-full p-5 text-left flex items-center justify-between text-sm font-bold text-slate-200 hover:text-amber-300 transition-colors cursor-pointer">
+            <span>Where exactly is NMIMS Shirpur and how safe is the residential campus?</span>
+            <i id="faq-icon-1" data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-content-1" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-400 leading-relaxed border-t border-slate-800/60 pt-3">
+            NMIMS Shirpur is situated inside the sprawling, self-sufficient Mukesh Patel Technology Park in Shirpur (Dhule district, Maharashtra) right on the Mumbai-Agra Highway. The campus is a gated, 24/7 CCTV-monitored sanctuary with round-the-clock professional security personnel, biometric hostel entry, and a 24/7 on-campus medical health center with doctor and ambulance facilities.
+          </div>
+        </div>
+
+        <div class="glass-panel rounded-xl border border-slate-800 overflow-hidden">
+          <button onclick="toggleFaq(2)" class="w-full p-5 text-left flex items-center justify-between text-sm font-bold text-slate-200 hover:text-amber-300 transition-colors cursor-pointer">
+            <span>What is included in the Residential Delegate Package?</span>
+            <i id="faq-icon-2" data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-content-2" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-400 leading-relaxed border-t border-slate-800/60 pt-3">
+            The Residential Pass (₹3,499) includes 3 Days & 2 Nights accommodation in student hostel suites, all 4 meals daily (power breakfast, committee buffet lunch, evening high-tea, and banquet dinner), airport/railway shuttle transfers from Indore Airport (IDR) and Bhusawal Junction, full delegate stationery kit, and pass to the Secretariat Starlight Social Night and Closing Gala.
+          </div>
+        </div>
+
+        <div class="glass-panel rounded-xl border border-slate-800 overflow-hidden">
+          <button onclick="toggleFaq(3)" class="w-full p-5 text-left flex items-center justify-between text-sm font-bold text-slate-200 hover:text-amber-300 transition-colors cursor-pointer">
+            <span>How do the airport and railway station shuttle transfers operate?</span>
+            <i id="faq-icon-3" data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-content-3" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-400 leading-relaxed border-t border-slate-800/60 pt-3">
+            Delegates arriving at Devi Ahilyabai Holkar Airport, Indore (~130 km via 4-lane expressway) or Bhusawal Junction (~85 km) will be received by our student reception teams. Scheduled air-conditioned luxury buses run at designated intervals on Nov 12 (pre-arrival) and Nov 13 (Day 1 morning), and return shuttles run on Nov 15 evening.
+          </div>
+        </div>
+
+        <div class="glass-panel rounded-xl border border-slate-800 overflow-hidden">
+          <button onclick="toggleFaq(4)" class="w-full p-5 text-left flex items-center justify-between text-sm font-bold text-slate-200 hover:text-amber-300 transition-colors cursor-pointer">
+            <span>Is NMMUN Shirpur beginner-friendly for first-time delegates?</span>
+            <i id="faq-icon-4" data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-content-4" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-400 leading-relaxed border-t border-slate-800/60 pt-3">
+            Yes! DISEC and UNHRC committees are specifically curated to nurture first-time delegates. In addition, the Shirpur Secretariat hosts an online Rules of Procedure (RoP) orientation workshop one week prior to the conference to teach research, caucus etiquette, and draft resolution writing.
+          </div>
+        </div>
+
+        <div class="glass-panel rounded-xl border border-slate-800 overflow-hidden">
+          <button onclick="toggleFaq(5)" class="w-full p-5 text-left flex items-center justify-between text-sm font-bold text-slate-200 hover:text-amber-300 transition-colors cursor-pointer">
+            <span>Can faculty advisors and school delegations accompany delegates?</span>
+            <i id="faq-icon-5" data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-content-5" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-400 leading-relaxed border-t border-slate-800/60 pt-3">
+            Yes! We provide specialized faculty advisor accommodation packages in our campus guest house suites, complete with lounge access, high-speed Wi-Fi, and invitation to the Secretariat High-Tea and Valedictory Plenary. Institutional delegation discounts are available for groups of 10+ delegates.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CALL TO ACTION BANNER ==================== -->
+  <section class="py-16 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative rounded-3xl overflow-hidden p-8 sm:p-14 bg-gradient-to-r from-amber-600/30 via-slate-900 to-blue-900/40 border border-amber-500/40 shadow-2xl text-center">
+        
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-cinzel text-slate-100 mb-4">
+          Secure Your Seat at NMMUN Shirpur
+        </h2>
+        <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto mb-8">
+          Join 500+ future diplomats and debate leaders at SVKM's NMIMS Shirpur. Residential hostel rooms and priority country portfolios are filling rapidly.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button onclick="openRegisterModal()" class="btn-gold-shimmer px-8 py-4 rounded-xl font-bold text-sm shadow-xl flex items-center gap-2 cursor-pointer">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            <span>Submit Delegate Application</span>
+          </button>
+          <button onclick="triggerToast('Shirpur Secretariat Helpdesk: shirpur@nmims.edu')" class="btn-outline-gold px-6 py-4 rounded-xl font-semibold text-sm cursor-pointer">
+            Contact Secretariat Desk
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-slate-800 bg-[#040810] py-14 relative z-10 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="text-lg font-bold font-cinzel text-slate-100">NMMUN 2026</span>
+          </div>
+          <p class="text-xs leading-relaxed text-slate-400">
+            The flagship Model United Nations conference of SVKM's NMIMS Shirpur Campus (Mukesh Patel Technology Park). Nurturing global diplomats, legal minds, and crisis policymakers since 2009.
+          </p>
+          <div class="flex items-center gap-3 text-slate-400">
+            <a href="#" class="p-2 rounded-lg bg-slate-900 border border-slate-800 hover:text-amber-400 transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+            <a href="#" class="p-2 rounded-lg bg-slate-900 border border-slate-800 hover:text-amber-400 transition-colors"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            <a href="#" class="p-2 rounded-lg bg-slate-900 border border-slate-800 hover:text-amber-400 transition-colors"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+            <a href="#" class="p-2 rounded-lg bg-slate-900 border border-slate-800 hover:text-amber-400 transition-colors"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-200 mb-4">Quick Navigation</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#about" class="hover:text-amber-300 transition-colors">Conference Legacy</a></li>
+            <li><a href="#retreat" class="hover:text-amber-300 transition-colors">The Shirpur Experience</a></li>
+            <li><a href="#committees" class="hover:text-amber-300 transition-colors">7 Council Chambers</a></li>
+            <li><a href="#transit" class="hover:text-amber-300 transition-colors">Airport & Rail Logistics</a></li>
+            <li><a href="#packages" class="hover:text-amber-300 transition-colors">Residential Packages</a></li>
+            <li><a href="#faq" class="hover:text-amber-300 transition-colors">Delegate FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Secretariat Contact -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-200 mb-4">Shirpur Campus Desk</h4>
+          <ul class="space-y-2.5">
+            <li class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-3.5 h-3.5 text-amber-400"></i>
+              <span>shirpur@nmims.edu / nmmun@nmims.edu</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400"></i>
+              <span>+91 98201 44521 / +91 2563 286545</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400 mt-0.5"></i>
+              <span>Mukesh Patel Technology Park, Babulde, Bank of Tapi, Shirpur, Dhule, Maharashtra 425405</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Host Institution -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-200 mb-4">Host Institution</h4>
+          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+            <span class="text-xs font-bold text-slate-200 block">SVKM's NMIMS Deemed-to-be University</span>
+            <span class="text-[11px] text-amber-400 font-semibold block mt-0.5">Shirpur Off-Campus Centre</span>
+            <span class="text-[11px] text-slate-400 block mt-1">MPSTME & School of Pharmacy and Technology Management (SPPSPTM)</span>
+            <div class="mt-3 flex items-center gap-2 text-[10px] text-slate-300">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              <span>Category-1 Deemed University (NAAC A+)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+        <div>
+          &copy; 2026 Narsee Monjee Model United Nations (NMMUN Shirpur). All rights reserved.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-300">Terms of Procedure</a>
+          <a href="#" class="hover:text-slate-300">Hostel Rules of Residence</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== COMMITTEE DETAIL MODAL ==================== -->
+  <div id="committee-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
+    <div class="relative w-full max-w-2xl bg-slate-950 border border-amber-500/40 rounded-2xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
+      <button onclick="closeCommitteeModal()" class="absolute top-4 right-4 z-20 text-slate-400 hover:text-white p-1 rounded-lg bg-slate-900 border border-slate-800 cursor-pointer">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div id="committee-modal-body" class="p-6 sm:p-8 overflow-y-auto">
+        <!-- Injected by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== DELEGATE REGISTRATION MODAL ==================== -->
+  <div id="registration-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
+    <div class="relative w-full max-w-xl bg-slate-950 border border-amber-500/40 rounded-2xl shadow-2xl overflow-hidden max-h-[92vh] flex flex-col">
+      
+      <button onclick="closeRegisterModal()" class="absolute top-4 right-4 z-20 text-slate-400 hover:text-white p-1.5 rounded-lg bg-slate-900 border border-slate-800 cursor-pointer">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="p-6 sm:p-8 overflow-y-auto">
+
+        <!-- FORM VIEW -->
+        <div id="reg-form-view">
+          <div class="text-left mb-6">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-amber-400">Delegate Application • Shirpur Campus</span>
+            <h2 class="text-2xl font-bold font-cinzel text-slate-100 mt-1">Register for NMMUN 2026</h2>
+            <p class="text-xs text-slate-400 mt-1">Select your residential pass and committee preferences for the Shirpur retreat.</p>
+          </div>
+
+          <form onsubmit="handleRegistrationSubmit(event)" class="space-y-4">
+            
+            <!-- Full Name -->
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Full Name *</label>
+              <input id="reg-name" required type="text" placeholder="e.g. Advika Sharma" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-sm text-slate-100 focus:outline-none focus:border-amber-400">
+            </div>
+
+            <!-- Email & Phone -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Email Address *</label>
+                <input id="reg-email" required type="email" placeholder="delegate@domain.com" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-sm text-slate-100 focus:outline-none focus:border-amber-400">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Phone / WhatsApp *</label>
+                <input id="reg-phone" required type="tel" placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-sm text-slate-100 focus:outline-none focus:border-amber-400">
+              </div>
+            </div>
+
+            <!-- Institution & Package Type -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">School / College / University *</label>
+                <input id="reg-inst" required type="text" placeholder="e.g. MPSTME / St. Xavier's" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-sm text-slate-100 focus:outline-none focus:border-amber-400">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Delegate Package</label>
+                <select id="reg-package-type" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-sm text-slate-100 focus:outline-none focus:border-amber-400">
+                  <option value="Residential">Residential All-Inclusive (₹3,499 - Stay + Meals + Kit)</option>
+                  <option value="Non-Residential">Non-Residential Day Pass (₹1,999)</option>
+                  <option value="Double Delegation">Double Delegation Residential (₹6,499 for 2)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Committee Preferences -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">1st Committee Preference *</label>
+                <select id="reg-committee-1" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-sm text-slate-100 focus:outline-none focus:border-amber-400">
+                  <option value="UNSC">UNSC (Security Council - Executive Chamber)</option>
+                  <option value="UNHRC">UNHRC (Human Rights Council - C.V. Raman Hall)</option>
+                  <option value="AIPPM">AIPPM (Indian Political Meet - Bhabha Hall)</option>
+                  <option value="DISEC">DISEC (Disarmament GA-1 - Main Auditorium)</option>
+                  <option value="HCC 1962">HCC 1962 (Historic Crisis - Situation Room)</option>
+                  <option value="UNODC">UNODC (Drugs & Crime - Moot Court)</option>
+                  <option value="IPC">IPC (International Press - Media Lab)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">2nd Committee Preference</label>
+                <select id="reg-committee-2" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-sm text-slate-100 focus:outline-none focus:border-amber-400">
+                  <option value="UNHRC">UNHRC (Human Rights Council)</option>
+                  <option value="UNSC">UNSC (Security Council)</option>
+                  <option value="DISEC">DISEC (Disarmament GA-1)</option>
+                  <option value="AIPPM">AIPPM (Indian Political Meet)</option>
+                  <option value="UNODC">UNODC (Drugs & Crime)</option>
+                  <option value="HCC 1962">HCC 1962 (Historic Crisis)</option>
+                  <option value="IPC">IPC (International Press)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Country Preference & Shuttle Pickup -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Country / Portfolio Preference</label>
+                <input id="reg-country-pref" type="text" placeholder="e.g. France / Home Minister" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-sm text-slate-100 focus:outline-none focus:border-amber-400">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Campus Shuttle Pickup Point</label>
+                <select id="reg-shuttle" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-sm text-slate-100 focus:outline-none focus:border-amber-400">
+                  <option value="Indore Airport">Indore Airport (IDR) Terminal Pickup</option>
+                  <option value="Bhusawal Station">Bhusawal Junction Railway Station</option>
+                  <option value="Dhule Station">Dhule Bus / Railway Terminal</option>
+                  <option value="Self Arrival">Self-Arranged Arrival directly to Shirpur Campus</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- MUN Experience Level -->
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Prior MUN Experience</label>
+              <select id="reg-exp" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-sm text-slate-100 focus:outline-none focus:border-amber-400">
+                <option value="First-timer">First-timer / Novice (Eligible for Pre-MUN Workshop)</option>
+                <option value="1-3">1 to 3 Conferences</option>
+                <option value="4-7">4 to 7 Conferences</option>
+                <option value="8+">8+ Conferences (Circuit Veteran)</option>
+              </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="pt-4">
+              <button type="submit" class="btn-gold-shimmer w-full py-3.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2 cursor-pointer shadow-lg">
+                <span>Submit Priority Application</span>
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+              </button>
+              <p class="text-[10px] text-center text-slate-400 mt-2">
+                By submitting, you agree to abide by the NMMUN Shirpur 2026 Code of Diplomatic Conduct and Hostel Rules.
+              </p>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- SUCCESS VIEW (Hidden initially) -->
+        <div id="reg-success-view" class="hidden text-center py-6">
+          <div class="w-16 h-16 rounded-full bg-emerald-500/20 border-2 border-emerald-400 flex items-center justify-center text-emerald-400 mx-auto mb-4 animate-bounce">
+            <i data-lucide="check" class="w-8 h-8"></i>
+          </div>
+          
+          <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Application Confirmed</span>
+          <h3 class="text-2xl font-bold font-cinzel text-slate-100 mt-1 mb-2">Welcome to NMMUN Shirpur 2026!</h3>
+          <p id="success-name-display" class="text-sm font-semibold text-amber-300 mb-4"></p>
+
+          <div class="bg-slate-900/90 border border-amber-500/30 rounded-xl p-4 max-w-sm mx-auto mb-6 text-left">
+            <div class="text-[10px] uppercase font-bold text-slate-400 mb-1">Provisional Allotment Code:</div>
+            <div id="success-ref-code" class="text-xl font-mono font-bold text-amber-400 tracking-wider">NMMUN-SHP-000000</div>
+            <div class="text-[11px] text-slate-400 mt-2">
+              Please save this code. Our Delegate Affairs desk will email your official allotment letter, hostel room assignment, and shuttle convoy timings within 48 hours.
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center gap-3">
+            <button onclick="closeRegisterModal()" class="btn-gold-shimmer px-6 py-2.5 rounded-xl font-bold text-xs cursor-pointer">
+              Done
+            </button>
+            <a href="#transit" onclick="closeRegisterModal()" class="btn-outline-gold px-5 py-2.5 rounded-xl font-semibold text-xs cursor-pointer">
+              View Shuttle Timings
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Lucide script activation -->
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <!-- Application Logic -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

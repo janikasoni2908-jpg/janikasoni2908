@@ -1,0 +1,436 @@
+/* ==========================================================================
+   NMMUN 2026 - Official Landing Page Stylesheet
+   Theme: Diplomatic Navy, Imperial Gold, Obsidian & Marble Accents
+   Venue: SVKM's NMIMS Shirpur Campus (Mukesh Patel Technology Park)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --bg-primary: #050b14;
+  --bg-secondary: #0b1526;
+  --bg-card: rgba(15, 27, 48, 0.75);
+  --bg-card-hover: rgba(22, 38, 68, 0.85);
+  --gold-primary: #d4af37;
+  --gold-light: #f3e5ab;
+  --gold-dark: #aa820a;
+  --gold-gradient: linear-gradient(135deg, #f5d77f 0%, #d4af37 50%, #aa8010 100%);
+  --gold-subtle: rgba(212, 175, 55, 0.15);
+  --blue-accent: #1d70b8;
+  --blue-cyan: #38bdf8;
+  --border-gold: rgba(212, 175, 55, 0.3);
+  --border-card: rgba(255, 255, 255, 0.08);
+  --text-primary: #f8fafc;
+  --text-muted: #94a3b8;
+  --font-serif: 'Cinzel', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Base resets & typography */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #050b14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2d4a;
+  border-radius: 6px;
+  border: 2px solid #050b14;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Font classes */
+.font-cinzel {
+  font-family: var(--font-serif);
+}
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Text Gradients */
+.text-gold-gradient {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-silver-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #64748b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-blue-gradient {
+  background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Cards */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-card);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+  border-color: var(--border-gold);
+  background: var(--bg-card-hover);
+  box-shadow: 0 12px 36px -10px rgba(0, 0, 0, 0.7), 0 0 20px -5px rgba(212, 175, 55, 0.15);
+}
+
+.glass-card-gold {
+  background: rgba(18, 30, 52, 0.65);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Diplomatic Ambient Background Glows */
+.ambient-glow-1 {
+  position: absolute;
+  top: -10%;
+  left: 20%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(29, 112, 184, 0.22) 0%, rgba(5, 11, 20, 0) 70%);
+  pointer-events: none;
+  filter: blur(70px);
+  z-index: 0;
+}
+
+.ambient-glow-2 {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.12) 0%, rgba(5, 11, 20, 0) 70%);
+  pointer-events: none;
+  filter: blur(80px);
+  z-index: 0;
+}
+
+.ambient-glow-3 {
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(30, 58, 138, 0.18) 0%, rgba(5, 11, 20, 0) 70%);
+  pointer-events: none;
+  filter: blur(90px);
+  z-index: 0;
+}
+
+/* Background Subtle Grid Pattern */
+.bg-grid-pattern {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+}
+
+/* Shimmer Button Effect */
+.btn-gold-shimmer {
+  position: relative;
+  overflow: hidden;
+  background: var(--gold-gradient);
+  color: #060d17;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.35);
+}
+
+.btn-gold-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.45),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: 0.6s ease;
+}
+
+.btn-gold-shimmer:hover::before {
+  left: 150%;
+}
+
+.btn-gold-shimmer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.55);
+}
+
+.btn-outline-gold {
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-light);
+  background: rgba(212, 175, 55, 0.06);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+  background: rgba(212, 175, 55, 0.16);
+  border-color: #f5d77f;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+/* Pulsing Badge Indicator */
+.pulse-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+/* Countdown Box */
+.countdown-box {
+  background: linear-gradient(180deg, rgba(16, 30, 54, 0.9) 0%, rgba(9, 18, 33, 0.9) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Floating animation */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+/* Badges */
+.badge-gold {
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: #f3e5ab;
+}
+
+.badge-blue {
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #7dd3fc;
+}
+
+.badge-red {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #fca5a5;
+}
+
+.badge-emerald {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #6ee7b7;
+}
+
+/* Modal Backdrop */
+.modal-backdrop {
+  background-color: rgba(3, 7, 18, 0.88);
+  backdrop-filter: blur(10px);
+}
+
+/* Timeline vertical line */
+.timeline-stem {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background: linear-gradient(to bottom, #d4af37, #1d70b8, rgba(212, 175, 55, 0.2));
+}
+
+@media (min-width: 768px) {
+  .timeline-stem {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Shirpur Campus Feature Card Highlights */
+.campus-feature-card {
+  position: relative;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(16, 28, 49, 0.8) 0%, rgba(9, 17, 31, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.campus-feature-card:hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.8), 0 0 25px -5px rgba(212, 175, 55, 0.2);
+}
+
+/* Transit Step Badges */
+.transit-step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: #f3e5ab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+/* Package Pricing Card Special Highlight */
+.package-card-featured {
+  background: linear-gradient(180deg, rgba(22, 38, 68, 0.95) 0%, rgba(13, 24, 43, 0.95) 100%);
+  border: 2px solid rgba(212, 175, 55, 0.6);
+  box-shadow: 0 10px 40px -10px rgba(212, 175, 55, 0.25);
+  position: relative;
+}
+
+.package-card-featured::before {
+  content: 'MOST POPULAR (ALL-INCLUSIVE)';
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold-gradient);
+  color: #050b14;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 4px 14px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+}
+
+/* ==========================================================================
+   UNIQUE HERO ANIMATIONS: Diplomatic Constellation & Live Effects
+   ========================================================================== */
+
+#diplomatic-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+/* Rotating Gold Ring for Crest */
+@keyframes rotateRing {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.rotating-gold-ring {
+  position: absolute;
+  inset: -3px;
+  border-radius: 1.25rem;
+  background: conic-gradient(from 0deg, transparent 0%, #d4af37 25%, transparent 50%, #38bdf8 75%, transparent 100%);
+  animation: rotateRing 6s linear infinite;
+  z-index: -1;
+  opacity: 0.75;
+}
+
+/* Typewriter Blinking Cursor */
+.typewriter-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1.1em;
+  background-color: var(--gold-primary);
+  margin-left: 4px;
+  vertical-align: middle;
+  animation: blinkCursor 0.9s infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Floating Interactive Badges */
+@keyframes floatLeft {
+  0%, 100% { transform: translateY(0px) rotate(-1deg); }
+  50% { transform: translateY(-12px) rotate(1deg); }
+}
+
+@keyframes floatRight {
+  0%, 100% { transform: translateY(0px) rotate(1deg); }
+  50% { transform: translateY(-14px) rotate(-2deg); }
+}
+
+.float-left-badge {
+  animation: floatLeft 6s ease-in-out infinite;
+}
+
+.float-right-badge {
+  animation: floatRight 7s ease-in-out infinite;
+}
+
+/* Shimmer Light Sweep on Hero Title */
+.hero-title-shimmer {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #f5d77f 25%,
+    #d4af37 50%,
+    #f5d77f 75%,
+    #ffffff 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shineTitle 8s linear infinite;
+}
+
+@keyframes shineTitle {
+  to {
+    background-position: 200% center;
+  }
+}
+
